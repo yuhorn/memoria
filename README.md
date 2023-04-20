@@ -36,8 +36,40 @@ memoria
 定義した要件を実装しながら、随時追記予定
 
 # データベース設計
-実装完了後、追記予定
+## users テーブル
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| name               | string | null: false |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
 
+### association
+- has_many :albums
+- has_many :photos
+
+## albums テーブル
+| Column   | Type       | Options                        |
+| -------- | ---------- | ------------------------------ |
+| title    | string     | null: false                    |
+| category | integer    | null: false                    |
+| user     | references | null: false, foreign_key: true |
+
+### association
+- belongs_to :user
+- has_many :photos
+
+## photos テーブル
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| memo   | string     | null: false                    |
+| date   | string     | null: false                    |
+| user   | references | null: false, foreign_key: true |
+| album  | references | null: false, foreign_key: true |
+
+### association
+- belongs_to :user
+- belongs_to :album
+#
 # 画面遷移図
 実装完了後、追記予定
 
