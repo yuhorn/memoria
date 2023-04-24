@@ -20,7 +20,7 @@
           <% if user_signed_in? %>
             <div class="nav__right">
               <%= link_to "ログアウト", destroy_user_session_path, class: :nav__logout %>
-              <%= link_to "New Album", root_path, class: :nav__btn %>
+              <%= link_to "アルバム作成", root_path, class: :nav__btn %>
             </div>
           <% else %>
             <div class="nav__right">
