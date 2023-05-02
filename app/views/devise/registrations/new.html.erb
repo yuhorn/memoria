@@ -6,8 +6,8 @@
         <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
 
         <div class="field">
-          <%= f.label :nickname, "お名前" %><br />
-          <%= f.text_field :nickname, autofocus: true, autocomplete: "nickname" %>
+          <%= f.label :nickname, "お名前" %> <em>(6 characters maximum)</em><br />
+          <%= f.text_field :nickname, autofocus: true, maxlength: "6", autocomplete: "nickname" %>
         </div>
 
         <div class="field">
@@ -16,7 +16,7 @@
         </div>
 
         <div class="field">
-          <%= f.label :password, "パスワード（6文字以上）" %>
+          <%= f.label :password, "パスワード" %>
           <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> characters minimum)</em>
           <% end %><br />
@@ -24,7 +24,7 @@
         </div>
 
         <div class="field">
-          <%= f.label :password_confirmation, "パスワード（確認用）" %><br />
+          <%= f.label :password_confirmation, "パスワード" %> <em>(confirmation)</em><br />
           <%= f.password_field :password_confirmation, id:"user_password_confirmation", autocomplete: "off" %>
         </div>
 
