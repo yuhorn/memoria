@@ -78,6 +78,9 @@ a {
   color: #f3f4db;
   text-decoration: none;
   user-select: none;
+  border: 1.5px #f3f4db solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
 }
 .nav__logout:hover{
   opacity: 0.5;
