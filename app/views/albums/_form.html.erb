@@ -6,7 +6,7 @@
 
   <div class="field">
     <%= f.label :category, "カテゴリー" %><br />
-    <%= f.text_area :category, class: :form__text, id:"category" %>
+    <%= f.text_field :category, class: :form__text, id:"category" %>
   </div>
 
   <div class="field">
@@ -16,7 +16,7 @@
         <p>
           クリックしてファイルをアップロード
         </p>
-        <%= image_tag album.album_image, class: "album_image", id:"album_image" if album.album_image.attached? %>
+        <%= f.file_field :album_image, id:"album_image" %>
       </div>
     </div>
   </div>
