@@ -3,9 +3,16 @@ class AlbumsController < ApplicationController
   end
 
   def new
+    @album = Album.new
   end
 
   def create
+    @album = Album.create(album_params)
+    if @album.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   private
