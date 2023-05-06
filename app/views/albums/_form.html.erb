@@ -16,7 +16,7 @@
         <p>
           クリックしてファイルをアップロード
         </p>
-        <%= f.file_field :album_image, id:"album_image" %>
+        <%= image_tag album.album_image, class: "album_image", id:"album_image" if album.album_image.attached? %>
       </div>
     </div>
   </div>
