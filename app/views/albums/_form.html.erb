@@ -1,7 +1,7 @@
 <%= form_with model: @album, url: albums_path, local: true do |f|%>
   <div class="field">
     <%= f.label :title, "タイトル" %><br />
-    <%= f.text_field :title, id:"title" %>
+    <%= f.text_field :title, class: :form__text, id:"title" %>
   </div>
 
   <div class="field">
@@ -10,13 +10,11 @@
   </div>
 
   <div class="field">
-    <%= f.label :album_image, "表紙の画像" %><br />
+    表紙の画像
     <div id="previews"></div>
       <div class="click-upload">
-        <p>
-          クリックしてファイルをアップロード
-        </p>
-        <%= f.file_field :album_image, id:"album_image" %>
+        <%= f.label :title, "クリックしてファイルをアップロード" %><br />
+        <%= f.file_field :album_image, class: :form__text, id:"album_image" %>
       </div>
     </div>
   </div>
