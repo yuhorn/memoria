@@ -1,0 +1,25 @@
+<%= form_with model: @album, url: albums_path, local: true do |f|%>
+  <div class="field">
+    <%= f.label :title, "タイトル" %><br />
+    <%= f.text_field :title, class: :form__text, id:"title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :category, "カテゴリー" %><br />
+    <%= f.text_field :category, class: :form__text, id:"category" %>
+  </div>
+
+  <div class="field">
+    表紙の画像
+    <div id="previews"></div>
+      <div class="click-upload">
+        <%= f.label :title, "クリックしてファイルをアップロード" %><br />
+        <%= f.file_field :album_image, class: :form__text, id:"album_image" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
