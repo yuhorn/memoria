@@ -5,9 +5,11 @@
         <%= "こんにちは、" %>
         <%= link_to "ユーザー名さん", root_path, class: :greeting__link%>
       </div>
+      <div class="card__wrapper">
+        <% @albums.each do |album| %>
+          <%= render partial: "album", collection: @albums %>
+        <% end %>
+      </div>
     <% end %>
-    <div class="card__wrapper">
-      <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
-    </div>
   </div>
 </main>
