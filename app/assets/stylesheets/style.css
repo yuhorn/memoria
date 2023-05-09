@@ -179,16 +179,23 @@ a {
 }
 
 /* 詳細ページ */
-.prototype__wrapper{
+.album__wrapper{
   min-height: calc(100vh - 161px);
 }
-.prototype__hedding{
-  font-size: 24px;
+.album__detail{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.album__title{
+  font-size: 30px;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 5px;
 }
-.prototype__user{
+.album__user{
   display: block;
   font-size: 16px;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
@@ -196,28 +203,24 @@ a {
   text-align: center;
   text-decoration: underline;
 }
-.prototype__image{
-  width: 40%;
+.album__image{
+  width: 20%;
   margin: 0 auto;
   padding: 16px 0;
 }
-.prototype__detail{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.category{
+  font-size: 12px;
+  font-family: "ヒラギノ丸ゴ Pro", sans-serif;
+  color: #999;
+  font-weight: bold;
+  text-decoration: underline;
   margin-bottom: 8px;
 }
-.detail__title{
-  font-size: 20px;
-  font-family: "ヒラギノ丸ゴ Pro", sans-serif;
-  font-weight: bold;
-}
-.prototype__manage{
+.album__manage{
   display: flex;
   justify-content: center;
-  padding-top: 16px;
 }
-.prototype__btn{
+.album__btn{
   display: block;
   padding: 0.4em 1.6em;
   font-size: 0.4em;
@@ -230,7 +233,7 @@ a {
   transition: 0.4s ease;
   margin: 0 4px;
 }
-.prototype__btn:hover{
+.album__btn:hover{
   color: #fff;
   background: #999;
 }
