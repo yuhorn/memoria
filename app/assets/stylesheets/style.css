@@ -83,7 +83,8 @@ a {
   transition: 0.4s ease;
 }
 .nav__logout:hover{
-  opacity: 0.5;
+  color: #87CEFA;
+  background: #f3f4db;
 }
 
 /* フォーム周り */
@@ -125,7 +126,7 @@ a {
 }
 
 .preview-image{
-  width: 50%;
+  width: 25%;
 }
 
 /* メイン */
@@ -151,8 +152,10 @@ a {
 .card {
   width: calc((100% - 50px) / 3);
   margin-bottom: 40px;
+  text-align : center;
 }
 .card__img {
+  max-height: 240px;
   margin-bottom: 16px;
 }
 .card__title {

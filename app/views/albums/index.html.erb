@@ -7,9 +7,7 @@
         <%= "さん" %>
       </div>
       <div class="card__wrapper">
-        <% @albums.each do |album| %>
-          <%= render partial: "album", collection: @albums %>
-        <% end %>
+        <%= render partial: "album", collection: @albums %>
       </div>
     <% end %>
   </div>
