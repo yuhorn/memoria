@@ -1,0 +1,24 @@
+<main class="main">
+  <div class="inner">
+    <div class="album__wrapper">
+      <div class="album__detail">
+        <p class="category">
+          カテゴリー  <%= @album.category %>
+        </p>
+        <p class="album__title">
+          <%= @album.title %>
+        </p>
+        <%= link_to "by #{@album.user.nickname}", root_path, class: :album__user %>
+        <div class="album__image">
+          <%= image_tag @album.album_image %>
+        </div>
+        <% if @album.user == current_user %>
+          <div class="album__manage">
+            <%= link_to "編集する", root_path, class: :album__btn %>
+            <%= link_to "削除する", root_path, class: :album__btn %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</main>
