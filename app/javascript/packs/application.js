@@ -10,6 +10,7 @@ require("channels")
 require('../preview')
 require('../edit_preview')
 
+
 import "bootstrap"
 import "../stylesheets/application"
 
