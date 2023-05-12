@@ -151,6 +151,7 @@ a {
 }
 .card {
   width: calc((100% - 50px) / 3);
+  min-height: 320px;
   margin-bottom: 40px;
   text-align : center;
 }
@@ -238,26 +239,12 @@ a {
   background: #999;
 }
 
-.prototype__comments{
-  background-color: #f6f6f6;
-  padding: 20px;
-  margin: 28px 0 40px 0;
-}
-
-.comments_lists{
-  padding-left: 20px;
-}
-
-.comments_list{
-  list-style-type: square;
-  padding-bottom: 5px;
-}
-
-.comment_user{
-  font-size: 16px;
-  font-family: "ヒラギノ丸ゴ Pro", sans-serif;
-  color: #999;
-  text-decoration: underline;
+.photo_image{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
 }
 
 /* ユーザーページ */
