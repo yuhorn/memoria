@@ -19,6 +19,11 @@
             <%= link_to "削除する", root_path, class: :album__btn %>
           </div>
         <% end %>
+        <div class="photo_image">
+          <% @photos.each do |photo| %>
+            <%= image_tag photo.image.variant(resize: '200x200') %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

@@ -19,6 +19,7 @@ class AlbumsController < ApplicationController
   end
 
   def show
+    @photos = Photo.all
   end
 
   def edit
