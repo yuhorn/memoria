@@ -2,7 +2,7 @@ class AlbumsController < ApplicationController
   before_action :authenticate_user!
   before_action :album_find, only: [:show, :edit, :update]
   def index
-    @albums = Album.all
+    @albums = Album.all  #order("created_at DESC")
   end
 
   def new
