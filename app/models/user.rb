@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :albums
+  has_many :photos
 
   with_options presence: true do
     validates :nickname, length: {maximum: 10}, uniqueness: true
