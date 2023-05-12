@@ -14,7 +14,7 @@
         </div>
         <% if @album.user == current_user %>
           <div class="album__manage">
-            <%= link_to "投稿する", new_album_photo_path, class: :album__btn %>
+            <%= link_to "投稿する", new_album_photo_path(@album), class: :album__btn %>
             <%= link_to "編集する", edit_album_path, class: :album__btn %>
             <%= link_to "削除する", root_path, class: :album__btn %>
           </div>
