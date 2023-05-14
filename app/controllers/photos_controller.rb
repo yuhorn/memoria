@@ -1,6 +1,12 @@
 class PhotosController < ApplicationController
+  before_action :authenticate_user!
+  
   def new
     @photo = Photo.new
+    @album = Album.find(params[:album_id])
+    if current_user != @album.user
+      redirect_to root_path
+    end
   end
 
   def create
