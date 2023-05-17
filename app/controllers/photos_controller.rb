@@ -18,6 +18,9 @@ class PhotosController < ApplicationController
     end
   end
 
+  def destroy
+  end
+
   private
   def photo_params
     params.require(:photo).permit(:memo, :date, :image).merge(user_id: current_user.id, album_id: params[:album_id])
