@@ -253,6 +253,7 @@ a {
   display: block;
   font-size: 16px;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
+  margin-left: 10px;
   margin-bottom: 5px;
   font-weight: bold;
   text-align: center;
@@ -263,6 +264,14 @@ a {
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
   color: #999;
   text-align: center;
+}
+.photo__delete {
+  width: 16px;
+  margin-left: 10px;
+}
+.photo__body {
+  display: flex;
+  justify-content: center;
 }
 
 /* ユーザーページ */
