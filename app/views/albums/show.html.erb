@@ -25,7 +25,7 @@
               <%= link_to image_tag(photo.image.variant(resize: '200x200')), root_path %>
               <div class="photo__body">
                 <%= link_to photo.memo, root_path, class: :photo__title %>
-                <%= link_to image_tag("gomibako.png", class: :photo__delete), root_path %>
+                <%= link_to image_tag("gomibako.png", class: :photo__delete), album_photo_path(photo) %>
               </div>
               <%= link_to photo.date, root_path, class: :photo__user %>
             </div>
