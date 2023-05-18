@@ -243,8 +243,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
-  margin-top: 30px;
+  text-align: center;
+  margin: 20px auto;
 }
 .photo__card{
   align-items: center;
@@ -258,12 +258,13 @@ a {
   font-weight: bold;
   text-align: center;
 }
-.photo__user {
+.photo__date {
   display: block;
   font-size: 12px;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
   color: #999;
   text-align: center;
+  margin-bottom: 10px;
 }
 .photo__delete {
   width: 16px;
@@ -272,6 +273,10 @@ a {
 .photo__body {
   display: flex;
   justify-content: center;
+}
+.flash {
+  font-family: "ヒラギノ丸ゴ Pro", sans-serif;
+  color: #999;
 }
 
 /* ユーザーページ */
