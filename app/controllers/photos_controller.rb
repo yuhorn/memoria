@@ -19,7 +19,7 @@ class PhotosController < ApplicationController
   end
 
   def index
-    @photos = Photo.order("created_at DESC")
+    @photos = Photo.order("date DESC")
   end
 
   def destroy
