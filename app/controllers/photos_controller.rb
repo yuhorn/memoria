@@ -18,6 +18,10 @@ class PhotosController < ApplicationController
     end
   end
 
+  def index
+    @photos = Photo.order("created_at DESC")
+  end
+
   def destroy
   end
 
