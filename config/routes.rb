@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "albums#index"
   resources :albums, only: [:index, :new, :create, :show, :edit, :update] do
-    resources :photos, only: [:new, :create, :destroy]
+    resources :photos, only: [:new, :create, :index, :destroy]
   end
 end

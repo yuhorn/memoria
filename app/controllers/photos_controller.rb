@@ -18,7 +18,15 @@ class PhotosController < ApplicationController
     end
   end
 
+  def index
+    @photos = Photo.order("date DESC")
+  end
+
   def destroy
+    photo = Photo.find(params[:id])
+    @album = Album.find(params[:album_id])
+    photo.destroy
+    redirect_to album_path(params[:album_id]), notice: "投稿を削除しました。"
   end
 
   private

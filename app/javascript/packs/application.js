@@ -9,6 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require('../preview')
 require('../edit_preview')
+require('../photo_preview')
 
 import "bootstrap"
 import "../stylesheets/application"
