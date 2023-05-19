@@ -96,6 +96,11 @@ a {
   width: 50%;
 }
 
+.category-select {
+  width: 20%;
+  height: 30px;
+}
+
 .field{
   margin: 10px 0;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
@@ -186,7 +191,7 @@ a {
 .album__detail{
   display: flex;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
   margin-bottom: 8px;
 }
 .album__title{
@@ -242,7 +247,7 @@ a {
 .photo{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column-reverse;
+  justify-content: flex-start;
   text-align: center;
   margin: 20px auto;
 }
