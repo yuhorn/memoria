@@ -2,7 +2,7 @@ class AlbumsController < ApplicationController
   before_action :authenticate_user!
   before_action :album_find, only: [:show, :edit, :update]
   def index
-    @albums = Album.all  #order("created_at DESC")
+    @albums = Album.order("updated_at DESC")
   end
 
   def new
@@ -19,7 +19,7 @@ class AlbumsController < ApplicationController
   end
 
   def show
-    @photos = Photo.all
+    @photos = @album.photos.includes(:user)
   end
 
   def edit
@@ -38,7 +38,7 @@ class AlbumsController < ApplicationController
 
   private
   def album_params
-    params.require(:album).permit(:title, :category, :album_image).merge(user_id: current_user.id)
+    params.require(:album).permit(:title, :category_id, :album_image).merge(user_id: current_user.id)
   end
 
   def album_find
