@@ -186,7 +186,7 @@ a {
 .album__detail{
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   margin-bottom: 8px;
 }
 .album__title{
@@ -242,7 +242,7 @@ a {
 .photo{
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: column-reverse;
   text-align: center;
   margin: 20px auto;
 }
