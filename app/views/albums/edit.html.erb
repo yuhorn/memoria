@@ -10,7 +10,7 @@
 
         <div class="field">
           <%= f.label :category, "カテゴリー" %><br />
-          <%= f.text_field :category, class: :form__text, id:"category" %>
+          <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-select"}) %>
         </div>
 
         <div class="field">
