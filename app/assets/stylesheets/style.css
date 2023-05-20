@@ -89,6 +89,10 @@ a {
 
 /* フォーム周り */
 .form__wrapper{
+  min-height: calc(100vh - 161px);
+}
+
+.new__wrapper{
   min-height: calc(100vh - 239px);
 }
 
@@ -102,6 +106,7 @@ a {
 }
 
 .field{
+  width: 60%;
   margin: 10px 0;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
 }
@@ -182,6 +187,12 @@ a {
   color: #999;
   text-align: right;
   text-decoration: underline;
+}
+.updated_at {
+  font-size: 12px;
+  font-family: "ヒラギノ丸ゴ Pro", sans-serif;
+  color: #999;
+  margin-bottom: 8px;
 }
 
 /* 詳細ページ */

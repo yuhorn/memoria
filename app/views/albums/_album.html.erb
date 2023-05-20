@@ -3,6 +3,9 @@
   <div class="card__body">
     <%= link_to album.title, album_path(album), class: :card__title%>
     <%= link_to album.category.name, root_path, class: :category %>
+    <div class="updated_at">
+      最終投稿  <%= album.photos.order(:updated_at).last.updated_at.in_time_zone('Tokyo').strftime('%Y/%m/%d %H:%M:%S') %>
+    </div>
     <%= link_to "by #{album.user.nickname}", root_path, class: :card__user %>
   </div>
 </div>
