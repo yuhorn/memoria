@@ -1,6 +1,6 @@
 class AlbumsController < ApplicationController
   before_action :authenticate_user!
-  before_action :album_find, only: [:show, :edit, :update]
+  before_action :album_find, only: [:show, :edit, :update, :destroy]
   def index
     @albums = Album.order(:created_at)
   end
@@ -33,6 +33,12 @@ class AlbumsController < ApplicationController
       redirect_to album_path
     else
       render :edit
+    end
+  end
+
+  def destroy
+    if @album.destroy
+      redirect_to root_path
     end
   end
 
