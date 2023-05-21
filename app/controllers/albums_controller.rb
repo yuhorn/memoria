@@ -37,9 +37,8 @@ class AlbumsController < ApplicationController
   end
 
   def destroy
-    if @album.destroy
-      redirect_to root_path
-    end
+    @album.destroy
+    redirect_to root_path
   end
 
   private
