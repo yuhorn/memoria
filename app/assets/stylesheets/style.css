@@ -143,6 +143,7 @@ a {
 
 .greeting{
   margin-bottom: 20px;
+  font-family: "ヒラギノ丸ゴ Pro", sans-serif;
 }
 .greeting__link{
   text-decoration: underline;
@@ -161,19 +162,23 @@ a {
 }
 .card {
   width: calc((100% - 50px) / 3);
-  min-height: 320px;
   margin-bottom: 40px;
   text-align : center;
 }
 .card__img {
-  max-height: 240px;
-  margin-bottom: 16px;
+  height: 240px;
+  margin: 8px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__body {
+  height: 70px;
 }
 .card__title {
   display: block;
   font-size: 20px;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
-  margin-bottom: 8px;
   font-weight: bold;
 }
 .card__summary {
@@ -192,7 +197,6 @@ a {
   font-size: 12px;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
   color: #999;
-  margin-bottom: 8px;
 }
 
 /* 詳細ページ */
@@ -265,13 +269,20 @@ a {
 }
 .photo__card{
   align-items: center;
+  margin: 20px;
+}
+.photo__image {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .photo__title {
   display: block;
   font-size: 16px;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
-  margin-left: 10px;
-  margin-bottom: 5px;
+  margin: 5px 5px 5px 10px;
   font-weight: bold;
   text-align: center;
 }
@@ -285,7 +296,7 @@ a {
 }
 .photo__delete {
   width: 16px;
-  margin-left: 10px;
+  margin: 10px;
 }
 .photo__body {
   display: flex;

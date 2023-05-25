@@ -6,6 +6,9 @@
         <%= link_to current_user.nickname, root_path, class: :greeting__link %>
         <%= "さん" %>
       </div>
+      <div class="flash">
+        <%= notice %>
+      </div>
       <div class="card__wrapper">
         <%= render partial: "album", collection: @albums %>
       </div>
