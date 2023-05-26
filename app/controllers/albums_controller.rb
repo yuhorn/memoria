@@ -38,7 +38,7 @@ class AlbumsController < ApplicationController
 
   def destroy
     @album.destroy
-    redirect_to root_path
+    redirect_to root_path, notice: "アルバムを削除しました。"
   end
 
   private
