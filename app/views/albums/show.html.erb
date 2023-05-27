@@ -19,13 +19,15 @@
           <div class="album__manage">
             <%= link_to "投稿する", new_album_photo_path(@album), class: :album__btn %>
             <%= link_to "編集する", edit_album_path, class: :album__btn %>
-            <%= link_to "削除する", album_path, method: :delete, class: :album__btn %>
+            <%= link_to "削除する", album_path, method: :delete, class: :album__btn, data: {confirm: "アルバムを削除します。よろしいですか？"} %>
           </div>
         <% end %>
         <div class="photo">
           <% @photos.each do |photo| %>
             <div class = "photo__card">
-              <%= link_to image_tag(photo.image.variant(resize: '250x250')), root_path %>
+              <div class = "photo__image">
+                <%= link_to image_tag(photo.image.variant(resize: '200x200')), root_path %>
+              </div>
               <div class="photo__body">
                 <%= link_to photo.memo, root_path, class: :photo__title %>
                 <%= link_to image_tag("gomibako.png", class: :photo__delete), album_photo_path(@album, photo), method: :delete, data: {confirm: "投稿を削除します。よろしいですか？"} %>
