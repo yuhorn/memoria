@@ -1,33 +1,35 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+  before do
+    @user = FactoryBot.build(:user)
+  end
+
   describe 'ユーザー新規登録' do
     it 'nicknameが空では登録できない' do
-      user = FactoryBot.build(:user)
+      @user.nickname = ''
     end
     it 'emailが空では登録できない' do
-      user = FactoryBot.build(:user)
+      @user.email = ''
     end
     it 'passwordが空では登録できない' do
-      user = FactoryBot.build(:user)
+      @user.password = ''
     end
     it '確認用passwordが空では登録できない' do
-      user = FactoryBot.build(:user)
+      @user.encrypted_password = ''
     end
     it 'すでに存在するnicknameは登録できない' do
-      user = FactoryBot.build(:user)
     end
     it 'すでに存在するemailは登録できない' do
-      user = FactoryBot.build(:user)
     end
     it 'nicknameは10文字以内でないと登録できない' do
-      user = FactoryBot.build(:user)
+      @user.nickname = 'abcdefjhijk'
     end
     it 'passwordは半角英数字でないと登録できない' do
-      user = FactoryBot.build(:user)
+      @user.password = '１１１１１１'
     end
     it 'passwordは6文字以上でないと登録できない' do
-      user = FactoryBot.build(:user)
+      @user.password = '11111'
     end
   end
 end
