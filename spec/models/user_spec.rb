@@ -11,15 +11,18 @@ RSpec.describe User, type: :model do
     end
     it 'nicknameが空では登録できない' do
       @user.nickname = ''
+      @user.valid?
+      expect(@user.errors.full_messages).to include("Nickname can't be blank")
     end
     it 'emailが空では登録できない' do
       @user.email = ''
+      @user.valid?
+      expect(@user.errors.full_messages).to include("Email can't be blank")
     end
     it 'passwordが空では登録できない' do
       @user.password = ''
-    end
-    it '確認用passwordが空では登録できない' do
-      @user.encrypted_password = ''
+      @user.valid?
+      expect(@user.errors.full_messages).to include("Password can't be blank")
     end
     it 'すでに存在するnicknameは登録できない' do
     end
@@ -27,12 +30,23 @@ RSpec.describe User, type: :model do
     end
     it 'nicknameは10文字以内でないと登録できない' do
       @user.nickname = 'abcdefjhijk'
+      @user.valid?
+      expect(@user.errors.full_messages).to include("Nickname is too long (maximum is 10 characters)")
     end
     it 'passwordは半角英数字でないと登録できない' do
       @user.password = '１１１１１１'
+      @user.valid?
+      expect(@user.errors.full_messages).to include("Password は半角英数字で入力してください。")
     end
     it 'passwordは6文字以上でないと登録できない' do
       @user.password = '11111'
+      @user.valid?
+      expect(@user.errors.full_messages).to include("Password is too short (minimum is 6 characters)")
+    end
+    it 'passwordと確認用passwordが異なると登録できない' do
+      @user.password_confirmation = '111111'
+      @user.valid?
+      expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
     end
   end
 end
