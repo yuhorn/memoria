@@ -5,7 +5,7 @@ memoria
 ペットの写真をアルバムとして管理し、ユーザー同士でシェアできる。
 
 # URL
-実装完了後、追記予定
+https://memoria-beur.onrender.com
 
 # テスト用アカウント
 ・Basic認証ID：admin  
@@ -33,7 +33,7 @@ memoria
 実装完了後、追記予定
 
 # 実装予定の機能
-定義した要件を実装しながら、随時追記予定
+検索機能、フォロー認証機能（鍵付きアカウント設定）
 
 # データベース設計
 ## users テーブル
@@ -48,11 +48,11 @@ memoria
 - has_many :photos
 
 ## albums テーブル
-| Column   | Type       | Options                        |
-| -------- | ---------- | ------------------------------ |
-| title    | string     | null: false                    |
-| category | integer    | null: false                    |
-| user     | references | null: false, foreign_key: true |
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| title       | string     | null: false                    |
+| category_id | integer    | null: false                    |
+| user        | references | null: false, foreign_key: true |
 
 ### association
 - belongs_to :user
@@ -74,7 +74,10 @@ memoria
 実装完了後、追記予定
 
 # 開発環境
-実装完了後、追記予定
+・フロントエンド  
+・バックエンド  
+・テスト  
+・テキストエディタ  
 
 # ローカルでの動作方法
 実装完了後、追記予定
