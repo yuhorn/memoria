@@ -30,7 +30,11 @@ https://memoria-beur.onrender.com
 [要件を定義したシート](https://docs.google.com/spreadsheets/d/1Rn-wsXG9RAg9qc5za1HGb_ddaZGurIh74zXct1C4tjE/edit?usp=sharing)
 
 # 実装した機能についての画像やGIFおよびその説明
-実装完了後、追記予定
+[![Image from Gyazo](https://i.gyazo.com/dd491fd2a24860435957739babdf49fb.gif)](https://gyazo.com/dd491fd2a24860435957739babdf49fb) 
+[![Image from Gyazo](https://i.gyazo.com/7b5dc2757aa346b7e4f26ecf5b1150b7.gif)](https://gyazo.com/7b5dc2757aa346b7e4f26ecf5b1150b7) 
+[![Image from Gyazo](https://i.gyazo.com/52cb8542a989984e612aa1df20554428.gif)](https://gyazo.com/52cb8542a989984e612aa1df20554428) 
+[![Image from Gyazo](https://i.gyazo.com/8311bd9c3484ed9e6e6cbadea0670cdb.gif)](https://gyazo.com/8311bd9c3484ed9e6e6cbadea0670cdb) 
+[![Image from Gyazo](https://i.gyazo.com/dbd01ef4783f960058ddbe5d1cda23ed.gif)](https://gyazo.com/dbd01ef4783f960058ddbe5d1cda23ed)
 
 # 実装予定の機能
 ・アプリ概要説明ページ  
@@ -96,4 +100,4 @@ https://memoria-beur.onrender.com
 % yarn install
 
 # 工夫したポイント
-アルバムのように、日々の写真を記録したり、投稿を後から見返すことに特化するよう設計しました。SNSが普及したことで、どうしても他のユーザーからの反響を気にしてしまうことが多いですが、写真投稿を思い出として残すことを最優先に考え、敢えてコメント機能はなくしました。未実装ですが追加機能として、フォロー認証機能やプライバシー設定を実装して許可したユーザーにアルバムを共有したり、検索機能を実装して公開されたアルバムを閲覧したりできるようにしたいと思っています。
+アルバムのように、日々の写真を記録したり、投稿を後から見返すことに特化するよう設計しました。SNSが普及したことで他のユーザーからの反響ありきで投稿することが多いですが、自分や家族が見返すために写真投稿を残すことを最優先に考え、敢えてコメント機能はなくして他のユーザーの反応を気にせず投稿できるようにました。未実装ですが追加機能として、フォロー認証機能やプライバシー設定を実装して許可したユーザーのみにアルバムを共有したり、検索機能を実装して公開されたアルバムをカテゴリー別に表示、閲覧したりできるようにしたいと思っています。
