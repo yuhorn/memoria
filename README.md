@@ -44,6 +44,8 @@ https://memoria-beur.onrender.com
 ・他SNSアカウントと紐付け
 
 # データベース設計
+![er](https://github.com/yuhorn/memoria/assets/119820982/9d571549-135c-409f-aad3-d20727368b19)
+
 ## users テーブル
 | Column             | Type   | Options     |
 | ------------------ | ------ | ----------- |
@@ -79,7 +81,7 @@ https://memoria-beur.onrender.com
 - belongs_to :album
 #
 # 画面遷移図
-実装完了後、追記予定
+![sennizu](https://github.com/yuhorn/memoria/assets/119820982/92dadcfd-5016-4db5-aa4e-265ae5a1da94)
 
 # 開発環境
 ・フロントエンド  
