@@ -6,6 +6,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def after_update_path_for(resource)
-    albums_index_path(resource)
+    users_show_path(resource)
   end
 end
