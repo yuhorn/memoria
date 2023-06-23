@@ -85,7 +85,7 @@ https://memoria-beur.onrender.com
 - belongs_to :album
 #
 # 画面遷移図
-![sennizu](https://github.com/yuhorn/memoria/assets/119820982/92dadcfd-5016-4db5-aa4e-265ae5a1da94)
+![sennizu](https://github.com/yuhorn/memoria/assets/119820982/6a45f6b1-ede2-4ea6-8231-4787668c2838)
 
 # 開発環境
 ・フロントエンド  
