@@ -1,5 +1,5 @@
 class AlbumsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: :index
   before_action :album_find, only: [:show, :edit, :update, :destroy]
   def index
     @albums = Album.order(:created_at)
