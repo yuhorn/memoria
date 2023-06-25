@@ -162,6 +162,9 @@ a {
 }
 .explain {
   min-height: calc(100vh - 160px);
+  font-size: 20px;
+  font-family: "ヒラギノ丸ゴ Pro", sans-serif;
+  color: #87CEFA;
 }
 .card {
   width: calc((100% - 50px) / 3);
