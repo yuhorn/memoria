@@ -37,7 +37,7 @@ a {
 /* ヘッダー */
 
 .header {
-  background-color: #87CEFA;
+  background-color: #AFCDD4;
   margin-bottom: 26px;
 }
 .inner {
@@ -58,16 +58,16 @@ a {
   padding: 0.4em 1.6em;
   font-size: 1em;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
-  color: #f3f4db;
+  color: #F5F4E2;
   text-decoration: none;
   user-select: none;
-  border: 1.5px #f3f4db solid;
+  border: 1.5px #F5F4E2 solid;
   border-radius: 3px;
   transition: 0.4s ease;
 }
 .nav__btn:hover{
-  color: #87CEFA;
-  background: #f3f4db;
+  color: #AFCDD4;
+  background: ç;
 }
 
 .nav__logout{
@@ -75,16 +75,16 @@ a {
   padding: 0.4em 1.6em;
   font-size: 1em;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
-  color: #f3f4db;
+  color: #F5F4E2;
   text-decoration: none;
   user-select: none;
-  border: 1.5px #f3f4db solid;
+  border: 1.5px #F5F4E2 solid;
   border-radius: 3px;
   transition: 0.4s ease;
 }
 .nav__logout:hover{
-  color: #87CEFA;
-  background: #f3f4db;
+  color: #AFCDD4;
+  background: #F5F4E2;
 }
 
 /* フォーム周り */
@@ -123,8 +123,8 @@ a {
   color: #fff;
   text-decoration: none;
   user-select: none;
-  background: #87CEFA;
-  border: 1px #87CEFA solid;
+  background: #AFCDD4;
+  border: 1px #AFCDD4 solid;
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
@@ -164,7 +164,7 @@ a {
   min-height: calc(100vh - 160px);
   font-size: 20px;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
-  color: #87CEFA;
+  color: #AFCDD4;
 }
 .card {
   width: calc((100% - 50px) / 3);
@@ -353,12 +353,12 @@ a {
 /* フッター */
 
 .footer {
-  background-color: #f66410;
+  background-color: #F27551;
   padding: 10px 0;
 }
 .copyright {
   text-align: center;
-  color: #f3f4db;
+  color: #F5F4E2;
   font-size: 10px;
   font-family: "ヒラギノ丸ゴ Pro", sans-serif;
 }
