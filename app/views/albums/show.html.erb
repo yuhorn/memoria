@@ -26,7 +26,11 @@
           <% @photos.each do |photo| %>
             <div class = "photo__card">
               <div class = "photo__image">
-                <%= link_to image_tag(photo.image.variant(resize: '200x200')), root_path %>
+                <% if photo.image.content_type.include?('image/')%>
+                  <%= link_to image_tag(photo.image.variant(resize: '200x200')), root_path %>
+                <% else %>
+                  <%= link_to video_tag(photo.image.variant(resize: '200x200')), root_path %>
+                <% end%>
               </div>
               <div class="photo__body">
                 <%= link_to photo.memo, root_path, class: :photo__title %>
