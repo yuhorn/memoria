@@ -18,6 +18,8 @@
           <%= f.password_field :password_confirmation, class: :field, id:"user_password_confirmation", autocomplete: "off" %>
         </div>
 
+        <%= f.hidden_field :reset_password_token %>
+
         <div class="actions">
           <%= f.submit "変更", class: :form__btn  %>
         </div>
